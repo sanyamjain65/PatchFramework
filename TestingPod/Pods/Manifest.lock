@@ -1,0 +1,16 @@
+PODS:
+  - PatchFramework (1.0.0)
+
+DEPENDENCIES:
+  - PatchFramework (from `../PatchFramework`)
+
+EXTERNAL SOURCES:
+  PatchFramework:
+    :path: "../PatchFramework"
+
+SPEC CHECKSUMS:
+  PatchFramework: 3966c6a66565f59beae272509720c97dd78e9ac3
+
+PODFILE CHECKSUM: a91b495875f6d210236aad8a4752b07f38b72e8e
+
+COCOAPODS: 1.5.3

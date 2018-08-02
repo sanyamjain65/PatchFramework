@@ -1,0 +1,6 @@
+framework module PatchFramework {
+  umbrella header "PatchFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
