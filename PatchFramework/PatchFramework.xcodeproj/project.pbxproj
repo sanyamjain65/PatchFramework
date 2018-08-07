@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6FF49E40239BF6006430FF /* Pods_PatchFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E733C62B7845527FDF8CDD3 /* Pods_PatchFramework.framework */; };
 		D93899A32111BF74003C7B43 /* PatchFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93899992111BF74003C7B43 /* PatchFramework.framework */; };
 		D93899AA2111BF74003C7B43 /* PatchFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D938999C2111BF74003C7B43 /* PatchFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D93899B62111CA96003C7B43 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93899B52111CA96003C7B43 /* test.swift */; };
+		D95C296521197B1300C652C1 /* PJSUAWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C296421197B1300C652C1 /* PJSUAWrapper.m */; };
+		D95C296821197B3600C652C1 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95C296721197B3600C652C1 /* CallKit.framework */; };
+		D95C296A21197B3E00C652C1 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95C296921197B3E00C652C1 /* PushKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,11 +27,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E733C62B7845527FDF8CDD3 /* Pods_PatchFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatchFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		229A8B0BDE1A8A5314DC84BF /* Pods-PatchFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatchFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PatchFramework/Pods-PatchFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		C1B5B3B67057BDAFD324B52E /* Pods-PatchFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatchFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-PatchFramework/Pods-PatchFramework.release.xcconfig"; sourceTree = "<group>"; };
 		D93899992111BF74003C7B43 /* PatchFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PatchFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D938999C2111BF74003C7B43 /* PatchFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatchFramework.h; sourceTree = "<group>"; };
 		D938999D2111BF74003C7B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D93899A22111BF74003C7B43 /* PatchFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatchFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93899B52111CA96003C7B43 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		D95C296321197AF800C652C1 /* PJSUAWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PJSUAWrapper.h; sourceTree = "<group>"; };
+		D95C296421197B1300C652C1 /* PJSUAWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJSUAWrapper.m; sourceTree = "<group>"; };
+		D95C296721197B3600C652C1 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		D95C296921197B3E00C652C1 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		D95C296B21197B9300C652C1 /* CallCFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallCFunction.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95C296A21197B3E00C652C1 /* PushKit.framework in Frameworks */,
+				D95C296821197B3600C652C1 /* CallKit.framework in Frameworks */,
+				AC6FF49E40239BF6006430FF /* Pods_PatchFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,11 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70F46D9CC37CEA94C37812CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				229A8B0BDE1A8A5314DC84BF /* Pods-PatchFramework.debug.xcconfig */,
+				C1B5B3B67057BDAFD324B52E /* Pods-PatchFramework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D938998F2111BF74003C7B43 = {
 			isa = PBXGroup;
 			children = (
 				D938999B2111BF74003C7B43 /* PatchFramework */,
 				D938999A2111BF74003C7B43 /* Products */,
+				D95C296621197B3500C652C1 /* Frameworks */,
+				70F46D9CC37CEA94C37812CB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +98,21 @@
 				D938999C2111BF74003C7B43 /* PatchFramework.h */,
 				D938999D2111BF74003C7B43 /* Info.plist */,
 				D93899B52111CA96003C7B43 /* test.swift */,
+				D95C296321197AF800C652C1 /* PJSUAWrapper.h */,
+				D95C296421197B1300C652C1 /* PJSUAWrapper.m */,
+				D95C296B21197B9300C652C1 /* CallCFunction.h */,
 			);
 			path = PatchFramework;
+			sourceTree = "<group>";
+		};
+		D95C296621197B3500C652C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95C296921197B3E00C652C1 /* PushKit.framework */,
+				D95C296721197B3600C652C1 /* CallKit.framework */,
+				0E733C62B7845527FDF8CDD3 /* Pods_PatchFramework.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +133,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D93899AD2111BF74003C7B43 /* Build configuration list for PBXNativeTarget "PatchFramework" */;
 			buildPhases = (
+				77A43E565BDB8FA03A2A9853 /* [CP] Check Pods Manifest.lock */,
 				D93899942111BF74003C7B43 /* Sources */,
 				D93899952111BF74003C7B43 /* Frameworks */,
 				D93899962111BF74003C7B43 /* Headers */,
@@ -180,12 +220,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77A43E565BDB8FA03A2A9853 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PatchFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D93899942111BF74003C7B43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D93899B62111CA96003C7B43 /* test.swift in Sources */,
+				D95C296521197B1300C652C1 /* PJSUAWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +391,7 @@
 		};
 		D93899AE2111BF74003C7B43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 229A8B0BDE1A8A5314DC84BF /* Pods-PatchFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -356,6 +419,7 @@
 		};
 		D93899AF2111BF74003C7B43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B5B3B67057BDAFD324B52E /* Pods-PatchFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
