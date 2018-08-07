@@ -14,6 +14,7 @@
 		D95C296521197B1300C652C1 /* PJSUAWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D95C296421197B1300C652C1 /* PJSUAWrapper.m */; };
 		D95C296821197B3600C652C1 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95C296721197B3600C652C1 /* CallKit.framework */; };
 		D95C296A21197B3E00C652C1 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95C296921197B3E00C652C1 /* PushKit.framework */; };
+		D95C296D21197FE400C652C1 /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95C296C21197FE400C652C1 /* CallManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		D95C296721197B3600C652C1 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
 		D95C296921197B3E00C652C1 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
 		D95C296B21197B9300C652C1 /* CallCFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallCFunction.h; sourceTree = "<group>"; };
+		D95C296C21197FE400C652C1 /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				D95C296321197AF800C652C1 /* PJSUAWrapper.h */,
 				D95C296421197B1300C652C1 /* PJSUAWrapper.m */,
 				D95C296B21197B9300C652C1 /* CallCFunction.h */,
+				D95C296C21197FE400C652C1 /* CallManager.swift */,
 			);
 			path = PatchFramework;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95C296D21197FE400C652C1 /* CallManager.swift in Sources */,
 				D93899B62111CA96003C7B43 /* test.swift in Sources */,
 				D95C296521197B1300C652C1 /* PJSUAWrapper.m in Sources */,
 			);
